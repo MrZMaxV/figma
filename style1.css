@@ -1,0 +1,82 @@
+:root {
+  /* Кольори */
+  --blue: rgba(89, 171, 217, 1);
+  --gray: rgba(176, 167, 186, 1);
+  --yellow: rgba(233, 234, 176, 1);
+}
+/* Задаю розмір усім p, h1, ol */
+ p, h1, ol {
+  font-size: 22.7px;
+}
+
+/* Задаю товщину та колір ліній */
+hr {
+  border: 2px solid black; 
+}
+/* Задаю радіус заокруглення фотографії */
+img {
+  border-radius: 105px;
+  }
+  
+
+
+/* Оформлення заднього фону, ширина, висота, відступи */
+.background {
+  background-color: var(--blue);
+  padding: 0 72px;
+  height: 1215px;
+  width: 1064px;
+  display: flex;
+  align-items: flex-start;
+  margin-right: 20px; /* Додаю відступ вправо для background, щоб була роздільність між ground1 & ground2 */
+}
+
+/* Оформлення лівого стовпця, ширина, висота, відступи */
+.ground1 {
+  background-color: var(--yellow);
+  height: 1215px;
+  width: 360px;
+  padding: 0 30px 0 30px;
+}
+
+/* Клас для відступів від загальних рядків */
+.retreat {
+  text-indent: 10px;
+}
+
+/* Оформлення правого стовпця, ширина, висота, відступи */
+.ground2 {
+  background-color: var(--gray);
+  padding: 0px 66px 0px 9px;
+  height: 1215px;
+  width: 540px;
+  position: relative;
+  margin-left: 20px; /* Додаю відступ вліво, щоб була роздільність між ground1 & ground2 */
+}
+
+.data1 {
+  text-align: right; /* Вирівнюю текст по правому краю */
+  position: absolute; /* Використовую абсолютне позиціювання */
+  right: 0; /* Зміщую текст вправо */
+  top: 290px; /* Вирівнюю зверху до низу */
+}
+
+.data2 {
+  text-align: right; 
+  position: absolute;
+  right: 0; 
+  top: 440px; 
+}
+
+.data3 {
+  text-align: right; 
+  position: absolute; 
+  right: 0; 
+  top: 590px; 
+}
+
+/* Ставлю розміщення імені по центру, та розмір шрифту 45 */
+.mz {
+  text-align: center;
+  font-size: 45px;
+}
